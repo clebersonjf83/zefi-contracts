@@ -3,7 +3,7 @@ pragma solidity 0.6.12;
 import "./libs/BEP20.sol";
 
 // PanGaspartoken with Governance.
-contract panGasparToken is BEP20('PanGaspar Finance', 'PGTI') {
+contract PanGasparToken is BEP20('PanGaspar Finance', 'PGTI') {
     /// @notice Creates `_amount` token to `_to`. Must only be called by the owner (MasterChef).
     function mint(address _to, uint256 _amount) public onlyOwner {
         _mint(_to, _amount);
